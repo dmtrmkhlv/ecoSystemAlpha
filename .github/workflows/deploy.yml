@@ -1,13 +1,13 @@
 name: Deploy to GitHub Pages
 on:
   push:
-    branches: [main] 
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4 
+      - uses: actions/checkout@v4
 
       - name: Install dependencies
         run: npm install
@@ -16,7 +16,7 @@ jobs:
         run: npm run build 
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2  
+        uses: actions/upload-pages-artifact@v2
         with:
           path: './build'  
 
@@ -30,4 +30,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/deploy-pages@v2 
+      - uses: actions/deploy-pages@v2
