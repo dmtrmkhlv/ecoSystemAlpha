@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "/demo_page/ecoSystemAlpha/",
+  "homepage": "https://dmtrmkhlv.github.io/ecoSystemAlpha",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.4.0",
