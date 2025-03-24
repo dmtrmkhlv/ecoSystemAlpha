@@ -9,6 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Clear cache
+        run: rm -rf node_modules/ .npm/ 
+
       - name: Install dependencies
         run: npm install
 
