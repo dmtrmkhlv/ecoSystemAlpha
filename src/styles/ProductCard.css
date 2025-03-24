@@ -1,0 +1,71 @@
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  min-width: 100%;
+  height: 200px;
+  min-height: 200px;
+  object-fit: cover;
+  background-color: #efefef;
+}
+
+.product-card h3 {
+  margin: 12px;
+  font-size: 18px;
+  color: #333;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-card p {
+  margin: 0 12px 12px;
+  font-size: 14px;
+  color: #666;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.like-button,
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  font-size: 20px;
+  transition: opacity 0.2s ease;
+}
+
+.like-button {
+  right: 50px;
+  color: #ff4757;
+}
+
+.delete-button {
+  right: 10px;
+  color: #666;
+}
+
+.like-button:hover,
+.delete-button:hover {
+  opacity: 0.8;
+}
