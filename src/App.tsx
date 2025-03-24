@@ -10,7 +10,8 @@ import CreateProductPage from "./pages/CreateProductPage";
 function App() {
   return (
     // <Router basename="/demo_page/ecoSystemAlpha">
-    <Router>
+    <Router basename="/ecoSystemAlpha">
+      {/* <Router> */}
       <Routes>
         <Route path="/" element={<Navigate to="/products" replace />} />
         <Route path="/products" element={<ProductsPage />} />
